@@ -38,11 +38,11 @@ public class CustomListTest {
     @Test
     public void deleteCityTest() {
         list = MockCityList();
-        City cityToDelete = new City("Moose Jaw", "SK");
-        list.addCity(cityToDelete);
-        assertTrue(list.hasCity(cityToDelete)); // Ensure city is added
-        list.deleteCity(cityToDelete);
-        assertFalse(list.hasCity(cityToDelete)); // Verify city is removed
+        City cityDelete = new City("Moose Jaw", "SK");
+        list.addCity(cityDelete);
+        assertTrue(list.hasCity(cityDelete)); // Ensure city is added
+        list.deleteCity(cityDelete);
+        assertFalse(list.hasCity(cityDelete)); // Verify city is removed
     }
 
 
